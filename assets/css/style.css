@@ -1416,7 +1416,7 @@ span.counter {
     width: auto;
 }
 .team-style-one .team-slider-nav button:hover {
-    background-color: #e7272d;
+    background-color: var(--theme-color);
     color: #fff;
 } 
 .team-style-one .team-slider-nav button:hover i {
@@ -2949,7 +2949,7 @@ a.theme-btn:hover:after {
 .pricing-plans .features ul li i {
     font-size: 20px;
     margin-right: 10px;
-    color: #60cd00;
+    color: #02aded;
 }
 .pricing-plans .features {
     padding-top: 20px;
