@@ -94,7 +94,7 @@
 :root {
     --common-found: 'Teko';
     --theme-found: 'DM Sans';
-    --theme-color: #ea2127;
+    --theme-color: #02aded;
 }
 
 html {
@@ -4098,7 +4098,7 @@ header.header-style-one.three .top-bar p i {
     position: relative;
     font-size: 26px;
     padding-left: 20px;
-    border-left: 1px solid #ff4146;
+    border-left: 1px solid #000;
     padding-right: 20px;
     padding-top: 6px;
     padding-bottom: 6px;
