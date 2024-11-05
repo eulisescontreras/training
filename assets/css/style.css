@@ -2189,7 +2189,7 @@ footer:before {
     font-family: var(--theme-found);
 }
 .header-logo a img {
-    width: 180px;
+    width: 80px;
     height: auto;
 }
 .header-style-one .nav-bar > ul > li:not(:last-child) {
@@ -4050,13 +4050,14 @@ header.header-style-one.three .theme-btn:hover {
 }
 header.header-style-one.three .theme-btn {
     border: 1px solid #fff ; 
-} header.header-style-one.three .header-logo:before {
+} 
+header.header-style-one.three .header-logo:before {
     content: "";
     background-color: #fff;
     position: absolute;
-    width: 230px;
+    width: 130px;
     height: 110px;
-    top: -25px;
+    top: -15px;
     left: -25px;
 } 
 header.header-style-one.three .header-logo img {
