@@ -1,0 +1,280 @@
+<html lang="en" class="">
+<style type="text/css">
+  @charset "UTF-8";
+.stepper .nav-tabs {
+  position: relative;
+}
+.stepper .nav-tabs > li {
+  width: 25%;
+  position: relative;
+}
+.stepper .nav-tabs > li:after {
+  content: "";
+  position: absolute;
+  background: #f1f1f1;
+  display: block;
+  width: 100%;
+  height: 5px;
+  top: 30px;
+  left: 50%;
+  z-index: 1;
+}
+.stepper .nav-tabs > li.completed::after {
+  background: #34bc9b;
+}
+.stepper .nav-tabs > li:last-child::after {
+  background: transparent;
+}
+.stepper .nav-tabs > li.active:last-child .round-tab {
+  background: #34bc9b;
+}
+.stepper .nav-tabs > li.active:last-child .round-tab::after {
+  content: "✔";
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  display: block;
+}
+.stepper .nav-tabs [data-toggle="tab"] {
+  width: 25px;
+  height: 25px;
+  margin: 20px auto;
+  border-radius: 100%;
+  border: none;
+  padding: 0;
+  color: #f1f1f1;
+}
+.stepper .nav-tabs [data-toggle="tab"]:hover {
+  background: transparent;
+  border: none;
+}
+.stepper .nav-tabs > .active > [data-toggle="tab"],
+.stepper .nav-tabs > .active > [data-toggle="tab"]:hover,
+.stepper .nav-tabs > .active > [data-toggle="tab"]:focus {
+  color: #34bc9b;
+  cursor: default;
+  border: none;
+}
+.stepper .tab-pane {
+  position: relative;
+  padding-top: 50px;
+}
+.stepper .round-tab {
+  width: 25px;
+  height: 25px;
+  line-height: 22px;
+  display: inline-block;
+  border-radius: 25px;
+  background: #fff;
+  border: 2px solid #34bc9b;
+  color: #34bc9b;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  font-size: 14px;
+}
+.stepper .completed .round-tab {
+  background: #34bc9b;
+}
+.stepper .completed .round-tab::after {
+  content: "✔";
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  display: block;
+}
+.stepper .active .round-tab {
+  background: #fff;
+  border: 2px solid #34bc9b;
+}
+.stepper .active .round-tab:hover {
+  background: #fff;
+  border: 2px solid #34bc9b;
+}
+.stepper .active .round-tab::after {
+  display: none;
+}
+.stepper .disabled .round-tab {
+  background: #fff;
+  color: #f1f1f1;
+  border-color: #f1f1f1;
+}
+.stepper .disabled .round-tab:hover {
+  color: #4dd3b6;
+  border: 2px solid #a6dfd3;
+}
+.stepper .disabled .round-tab::after {
+  display: none;
+}
+</style>
+<!-- Meta Options -->
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- Title -->
+     <title>Steper</title>
+    <!-- Bootstrap -->
+  
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/heading-icon.png">
+    <link rel="stylesheet" href="assets/font/flaticon_mycollection.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/theme.css"> 
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style-dark.css"> 
+     <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+   
+  <body class="light-d page-loaded">
+      <!-- Loader Start -->
+    <div class="preloader">
+      <div class="loader-wrap-heading">
+        <div class="load-text"> <span>L</span> <span>o</span> <span>a</span> <span>d</span> <span>i</span> <span>n</span> <span>g</span> </div>
+      </div>
+    </div>
+    <!-- Loader End -->
+  
+    <!-- Banner Style One Start -->
+    <section class="banner-style-one pt-2">
+      <div class="parallax" style="background-image: url(assets/images/pattren-3.png);"></div>
+      <div class="container">
+        <div class="row">
+          <div class="banner-details">
+             <figure class="pt-5">
+              <img src="assets/images/heading-icon.png" alt="Heading Icon">
+            </figure>
+            <h2>Welcome to JD Fitness</h2>
+          </div>
+        </div>
+      </div>
+      <div class="breadcrums">
+      </div>
+    </section>
+    <!-- Banner Style One End -->
+  
+    <!-- Contact Form 2 Start -->
+    <section class="py-5 contact-form-2">
+      <div class="heading">
+        <h2>Can you ask a few questions?</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="data">
+             <p>Have questions or want to chat? Fill out our contact form, and we’ll put you in touch with the right people.</p>
+              <form class="content-form" id="contact-form" method="post">
+                 <div class="row g-0">
+                  <input type="text" name="Complete Name" placeholder="Complete Name" required="">
+                 </div>
+                <div class="row g-0">
+                  <input type="email" name="Email Address" placeholder="Email Address" required="">
+                </div>
+                <div class="row g-0">
+                  <input type="number" name="Phone No" placeholder="Phone No" required="">
+                </div>
+                <div class="row g-0">
+                  <textarea placeholder="Question / Message?"></textarea>
+                </div>
+                <button type="submit" class="theme-btn">Send Message </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="info">
+              <ul class="contact">
+                <li>
+                  <i class="flaticon-maps"></i>
+                  <div>
+                    <h3>Address:</h3>
+                    <p>65 Allerton Street 901 N Pitt Str, USA</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="flaticon-iphone"></i>
+                  <div>
+                    <h3>Telephone:</h3>
+                    <a href="callto:(+380)503184707"> (+380) 50 318 47 07</a>
+                    <a href="callto:(+380)503184707"> (+182) 50 318 47 07</a>
+                  </div>
+                </li>
+                <li class="pb-0">
+                  <i class="flaticon-mail"></i>
+                  <div>
+                    <h3>Email:</h3>
+                    <a href="mailto:username@domain.com">username@domain.com</a>
+                    <a href="mailto:username@domain.com">username@domain.com</a>
+                  </div>
+                </li>
+              </ul> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Form 2 End -->
+  
+    <!-- Footer Style One Start -->
+    <footer class="footer-style-one" style="background-image: url(assets/images/footer-img.jpg);">
+      <div class="footer-p-3 rights">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <p>JD Fitness<i class="fa-solid fa-heart"></i> © 2024 | All rights reserved</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Style One End -->
+      
+    <div id="scroll-percentage" style="background: conic-gradient(rgb(255, 255, 255) 0%, rgb(65, 17, 17) 0%);"><span id="scroll-percentage-value">0%</span></div>  
+  
+    <!-- Jquery -->
+  
+    <script src="assets/js/jquery.min.js"></script>
+  
+    <!-- Waypoint -->
+  
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+  
+  
+    <!-- Counter -->
+  
+    <script src="assets/js/jquery.counterup.min.js"></script>
+  
+    <!-- Bootstrap Js -->
+  
+    <script src="assets/js/bootstrap.min.js"></script>
+  
+    <!-- Fancybox Js -->
+  
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+  
+    <!-- Nice Select Js -->
+  
+    <script src="assets/js/jquery.nice-select.js"></script> 
+  
+    <!-- Owl Carousal Js -->
+  
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/sweetalert.min.js"></script>
+    <script src="assets/js/contact.js"></script>
+  
+    <!-- Custom Js -->
+  
+    <script src="assets/js/custom.js"></script>
+  
+  
+  <div class="AZInsight-AMZ-Search"><div class="react-draggable" style="position: fixed; user-select: auto; touch-action: none; background-color: rgb(255, 255, 255); z-index: 2147483639; border: 1px solid rgb(41, 57, 145); box-shadow: rgb(41, 57, 145) 0px 0px 1px 1px; overflow: visible; display: none; width: 600px; height: 240px; transform: translate(0px, 0px); min-width: 580px; min-height: 85px; box-sizing: border-box; flex-shrink: 0; top: 0px; bottom: 0px; left: 1303px;"><span></span></div><div class="__resizable_base__" style="width: 100%; height: 100%; position: absolute; transform: scale(0, 0); left: 0px; flex: 0 1 0%;"></div></div></body></html>
