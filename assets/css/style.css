@@ -359,6 +359,11 @@ button.scrollTopStick.active:before,
     font-family: var(--theme-color);
     letter-spacing: 1px;
 }
+.theme-btn.back {
+    background: #333;
+    color: #ccc;
+    border-color: #ccc;
+}
 .theme-btn:after {
     content: "";
     position: absolute;
@@ -370,6 +375,10 @@ button.scrollTopStick.active:before,
     right: 6px;
     bottom: 4px;
     z-index: 0;
+}
+.theme-btn.back:after {
+    clip-path: polygon(0% 0, 0% 100%, 100% 100%);
+    left: 6px;        
 }
 .desktop-nav .nav-bar .extras .theme-btn.simple:after {
     display: none;
